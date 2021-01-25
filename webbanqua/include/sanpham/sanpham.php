@@ -3,6 +3,7 @@
 	$inloaiqua="";
 	//bien dieu kien
 	$dieukien="";
+
 	//hien thi loai qua	
 	if(isset($_POST['MaLH']))
 	{
