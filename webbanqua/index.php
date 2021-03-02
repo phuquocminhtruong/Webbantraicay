@@ -1,6 +1,6 @@
 <?php 
 	@session_start();
- 	require_once'include/ketnoi.php'; 
+ 	include('include/ketnoi.php');
 	//kiem Tra Dang Nhap
 	$thongbaoTK="";
 	if(isset($_POST['txttendangnhap']) && isset($_POST['txtpass']))
@@ -92,11 +92,11 @@ else
 		<div class="box">
 			<div class="shell clearfix">
 				<div class="banner">
-					<?php require_once'banner.php'; ?>
+					<?php include('banner.php'); ?>
 				</div>
 				
 				<div class="menuleft">
-					<?php C'menuleft.php';?>
+					<?php include('menuleft.php');?>
 				</div>
 				
 				<div class="main clearfix">
@@ -109,7 +109,7 @@ else
 									$manhinh=$_REQUEST['view'];
 									
 									if($manhinh=='trangchu')	
-										require_once'include/main.php';
+										include_once('include/main.php');
 									else if($manhinh=='gioithieu')
 										include_once('include/dichvu/gioithieu.php');
 									else if($manhinh=='dichvu')
@@ -152,7 +152,7 @@ else
 							?>
 							</td>
 							<td width="220" valign="top">
-							<?php require_once'menuright.php';?>
+							<?php include('menuright.php');?>
 							</td>
 						</tr>
 					</table>
@@ -162,7 +162,7 @@ else
 				</div>
 				
 				<div class="bottom">
-					<?php require_once'bottom.php' ;?>
+					<?php include('bottom.php') ;?>
 				</div>
 			</div>
 		</div>
