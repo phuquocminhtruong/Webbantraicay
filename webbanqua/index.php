@@ -96,7 +96,7 @@ else
 				</div>
 				
 				<div class="menuleft">
-					<?php require_once'menuleft.php';?>
+					<?php C'menuleft.php';?>
 				</div>
 				
 				<div class="main clearfix">
@@ -109,7 +109,7 @@ else
 									$manhinh=$_REQUEST['view'];
 									
 									if($manhinh=='trangchu')	
-										include_once('include/main.php');
+										require_once'include/main.php';
 									else if($manhinh=='gioithieu')
 										include_once('include/dichvu/gioithieu.php');
 									else if($manhinh=='dichvu')
