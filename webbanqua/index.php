@@ -1,6 +1,6 @@
 <?php 
 	@session_start();
- 	include('include/ketnoi.php'); 
+ 	require_once('include/ketnoi.php'); 
 	//kiem Tra Dang Nhap
 	$thongbaoTK="";
 	if(isset($_POST['txttendangnhap']) && isset($_POST['txtpass']))
